@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [facebookSuite]" parallel="tests">
+  <test thread-count="5" name="facebookApachiTest(failed)" parallel="tests">
+    <parameter name="mybrowser" value="Chrome"/>
+    <classes>
+      <class name="apachePOIBeg.facebookTest">
+        <methods>
+          <include name="happyScenario"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- apachePOIBeg.facebookTest -->
+    </classes>
+  </test> <!-- facebookApachiTest(failed) -->
+</suite> <!-- Failed suite [facebookSuite] -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [spiceJetSuite]" parallel="tests">
+  <test thread-count="5" name="spiceJetTest(failed)" parallel="tests">
+    <parameter name="mybrowser" value="Chrome"/>
+    <classes>
+      <class name="spiceJetTest.reservation">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="adult_child_infant_flight_seat"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- spiceJetTest.reservation -->
+    </classes>
+  </test> <!-- spiceJetTest(failed) -->
+</suite> <!-- Failed suite [spiceJetSuite] -->
